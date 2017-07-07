@@ -68,6 +68,7 @@ ul li {
   line-height: 1.7em;
 }
 
+
 /*--------------------------------------------------------------
 # Social Icons
 --------------------------------------------------------------*/
@@ -99,9 +100,11 @@ ul li {
   font-weight: bolder;
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
-
 }
-.site-title a {color: #404650;}
+
+.site-title a {
+  color: #404650;
+}
 
 
 /*--------------------------------------------------------------
@@ -132,6 +135,7 @@ Navigation
 .main-navigation, .menu-header-menu-container {
   display: inline;
 }
+
 
 /*--------------------------------------------------------------
 # Site Content
@@ -182,135 +186,214 @@ Navigation
 
 .work-item h3 {
   color: #1d1d1f;
-font-size: 24px;
-font-weight: bold;
-margin-bottom: 20px;
-line-height: 1.2em;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.2em;
 }
 
 .skill {
   margin-bottom: 10px;
 }
 
+
 /*
 #intro pic
 */
-#carousel {
-    position: relative;
-    padding: 0;
-    height: 660px;
-    margin-bottom: 5%;
-}
-section {
-    padding: 0 30px;
-}
-#carousel .bg {
-    position: absolute;
-    width: 100%;
-    z-index: 0;
-}
-#carousel .bg>* {
-    position: absolute;
-    width: 100%;
-}
-#carousel .bg svg {
-    height: 380px;
-    width: 100%;
-}
-#carousel .bg svg {
-    height: 480px;
-    width: 100%;
-}
-/*svg bg statements*/
-.bottom, .top {
-    top: 22px;
-}
-#carousel.storefront .bottom svg path {
-    fill: #e3ebf4;
-}
-#carousel.storefront .top svg stop:first-child {
-    stop-color: #c4cddc;
-}
-#carousel.storefront .top svg stop:last-child {
-    stop-color: #b1becf;
 
+#carousel {
+  position: relative;
+  padding: 0;
+  height: 660px;
+  margin-bottom: 5%;
 }
+
+section {
+  padding: 0 30px;
+}
+
+#carousel .bg {
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+
+#carousel .bg>* {
+  position: absolute;
+  width: 100%;
+}
+
+#carousel .bg svg {
+  height: 380px;
+  width: 100%;
+}
+
+#carousel .bg svg {
+  height: 480px;
+  width: 100%;
+}
+
+
+/*box bg*/
+
+#carousel .bg2 {
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+
+#carousel .bg2>* {
+  position: absolute;
+  width: 100%;
+}
+
+#carousel .bg2 svg {
+  height: 380px;
+  width: 100%;
+}
+
+#carousel .bg2 svg {
+  height: 480px;
+  width: 100%;
+}
+
+
+/*svg bg statements*/
+
+.bottom, .top {
+  top: 22px;
+}
+
+#carousel.storefront .bottom svg path {
+  fill: #e3ebf4;
+}
+
+#carousel.storefront .top svg stop:first-child {
+  stop-color: #c4cddc;
+}
+
+#carousel.storefront .top svg stop:last-child {
+  stop-color: #b1becf;
+}
+
 #carousel .bg .top svg path {
-    fill: url(#gradient_color);
+  fill: url(#gradient_color);
 }
+
 #carousel .inside {
-    text-align: center;
+  text-align: center;
 }
+
+
 /* about statements */
+
 .medium {
   position: absolute;
   margin: 0 auto;
   left: 0;
   right: 0;
+  overflow: hidden;
 }
+
 #carousel .box {
-    display: inline-block;
-    vertical-align: middle;
-    text-align: left;
-    margin: 0 auto;
-    max-width: 1080px;
-    line-height: 1.2em;
-    box-shadow: rgba(29,29,31,0.15) 0 10px 60px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  margin: 0 auto;
+  max-width: 1080px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07);
 }
+
 #carousel .box img {
   border-radius: 4px;
 }
+
 #carousel .box h2 {
   font-size: 24px;
-  padding: 15px 0 0 15px;
-  bottom: 80px;
-  color: white;
+  font-weight: 900;
+  opacity: 0.80;
+  padding: 15px 40px 15px 15px;
+  bottom: 45px;
+  color: #ffffff;
   z-index: 10;
   position: absolute;
 }
+
 #carousel .box h3 {
-  padding: 5px 0 0 15px;
-  bottom: 50px;
-  color: white;
+  padding: 5px 27px 0px 16px;
+  bottom: -6px;
+  /* opacity: 0.80; */
+  color: #e6e6e6;
+  font-size: 22px;
   z-index: 10;
   position: absolute;
 }
-.box-fade {
-      bottom: -86px;
+
+.stripes {
+  bottom: 21px;
+  transform-origin: 0;
+  position: absolute;
+  max-width: 1080px;
+  width: 100%;
+  height: 220px;
+  display: grid;
+  transform: skewY(-4deg);
 }
-.box-fade svg {
-  max-width: 1081px;
-  margin-left: -1px;
+
+.stripes :nth-child(1) {
+  grid-column: span 3;
+    background: linear-gradient(100grad, rgba(64, 70, 80, 0.67) 50%, rgba(177, 190, 207, 0.24));
 }
-.box-fade2 {
-    bottom: -92px;
+
+.stripes :nth-child(2) {
+  grid-area: 3/span 3/auto/-1;
+  background: linear-gradient(100grad, rgba(0, 119, 204, 0), rgba(0, 119, 204, .05) 40%, rgba(177, 190, 207, 0.6));
 }
-.box-fade2 svg {
-  max-width: 1081px;
-  margin-left: -1px;
+
+.stripes :nth-child(3) {
+  grid-row: 4;
+  grid-column: span 5;
+  background: linear-gradient(100grad, rgba(64, 70, 80, 0.67) 50%, rgba(177, 190, 207, 0.24));
+  height: 50px;
 }
-.box-fade2 svg path {
-  fill: #3c485e;
+
+.stripes :nth-child(4) {
+      background: linear-gradient(100grad, rgba(177, 190, 207, 0.52) 50%, rgba(50, 50, 93, .1));
+  grid-area: 4/span 5/auto/-1;
 }
+
+.stripes :nth-child(5) {
+  grid-area: auto/1/-1/-1;
+  background: linear-gradient(100grad, rgba(177, 190, 207, 0.27) 80%, rgba(177, 190, 207, 0.6));
+}
+
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+
 .col-1-2 {
-    width: 50%;
+  width: 50%;
 }
+
 .grid {
-    overflow: hidden;
-    margin-left: -30px;
-    width: calc(100% + 60px);
+  overflow: hidden;
+  margin-left: -30px;
+  width: calc(100% + 60px);
 }
+
 [class*='col-'] {
-    float: left;
-    min-height: 1px;
-    padding: 0 30px;
+  float: left;
+  min-height: 1px;
+  padding: 0 30px;
 }
+
 .work-item {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
+
 .site-footer {
   background-color: #1A1D20;
   padding: 100px 0;
@@ -355,13 +438,16 @@ section {
   font-size: 18px;
 }
 
+
 /* iPads (portrait and landscape) ----------- */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px) {
-/* Styles */
-  .box {max-width: 710px !important;}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */
+  .box {
+    max-width: 710px !important;
+  }
 }
+
 @media all and (max-width: 767px) {
   h2 {
     font-size: 24px;
@@ -397,7 +483,6 @@ and (max-device-width : 1024px) {
   .content-area {
     float: none;
   }
-
   .site-footer {
     padding: 60px 0 40px;
   }

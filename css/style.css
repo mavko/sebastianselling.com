@@ -68,7 +68,9 @@ ul li {
   line-height: 1.7em;
 }
 
-
+.dark {
+  color: #1A1D20 !important;
+}
 /*--------------------------------------------------------------
 # Social Icons
 --------------------------------------------------------------*/
@@ -395,12 +397,14 @@ section {
 }
 
 .site-footer {
-  background-color: #1A1D20;
+  color: #1A1D20 !important;
+  background-color: #e6e6e6;
   padding: 100px 0;
 }
 
 .site-footer a {
-  color: white;
+  color: #112378;
+  font-weight: bold;
 }
 
 .site-footer .site-info {

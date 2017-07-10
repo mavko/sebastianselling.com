@@ -623,6 +623,15 @@ section {
   .box {
     max-width: 710px !important;
   }
+  .stripes {
+    bottom: 48px;
+  }
+  #carousel {
+    height: 460px;
+  }
+  #carousel .bg svg {
+    height: 380px;
+  }
 }
 
 @media all and (max-width: 767px) {
@@ -634,6 +643,33 @@ section {
   }
   h5 {
     font-size: 16px;
+  }
+  section {
+    padding: 0px !important;
+  }
+  .bottom, .top {
+        top: -23px;
+  }
+  #carousel {
+        height: 394px;
+  }
+  #carousel .bg svg {
+    height: 380px;
+  }
+  #carousel .box {
+    height: 320px;
+  }
+  #carousel .box h3 {
+    font-size: 20px;
+  }
+  .stripes :nth-child(1) {
+    top: 24px;
+  }
+  .stripes :nth-child(3) {
+    height: 145px;
+  }
+  .col-1-2 {
+    width: 100%;
   }
   .site-header {
     padding: 40px 20px;

@@ -92,9 +92,7 @@ ul li {
 .site-header {
   max-width: 1080px;
   margin: 0 auto;
-  padding: 0 20px;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 40px 20px;
 }
 
 .site-title {
@@ -437,7 +435,7 @@ section {
 /*svg bg statements*/
 
 .bottom, .top {
-  top: 22px;
+    top: -40px;
 }
 
 #carousel.storefront .bottom svg path {
@@ -508,7 +506,7 @@ section {
 }
 
 .stripes {
-  bottom: 21px;
+    bottom: 54px;
   transform-origin: 0;
   position: absolute;
   max-width: 1080px;
@@ -703,4 +701,73 @@ section {
     -webkit-flex-direction: column;
     flex-direction: column;
   }
+}
+
+
+/* reset styles */
+html, body, div, h2, h3, h5, p, a, img, ul, li {
+    margin: 0; padding: 0;  border: 0; outline: 0; font-size: 100%;
+    vertical-align: baseline; background: transparent;
+}
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+html {
+	font-family: sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust:     100%;
+}
+
+body {
+	margin: 0;
+}
+
+footer,
+header,
+main,
+nav,
+section {
+	display: block;
+}
+
+img {
+	border: 0;
+}
+
+svg:not(:root) {
+	overflow: hidden;
+}
+/* Small menu. */
+
+@media screen and (min-width: 37.5em) {
+	.main-navigation ul {
+		display: block;
+	}
+}
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+	clear: both;
 }

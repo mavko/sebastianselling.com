@@ -225,7 +225,7 @@ Mask 2
   bottom: 0;
   height: 480px;
   width: 2px;
-  background-color: #e54b4b;
+  background-color: #17c37b;
   -webkit-animation: cd-pulse 1.3s 0.3s both;
   -moz-animation: cd-pulse 1.3s 0.3s both;
   animation: cd-pulse 1.3s 0.3s both;
@@ -398,18 +398,10 @@ section {
 }
 
 #carousel .bg svg {
-  height: 480px;
+    height: 610px;
   width: 100%;
 }
-
-#carousel .bg svg {
-  height: 480px;
-  width: 100%;
-}
-
-
 /*box bg*/
-
 #carousel .bg2 {
   position: absolute;
   width: 100%;
@@ -420,17 +412,6 @@ section {
   position: absolute;
   width: 100%;
 }
-
-#carousel .bg2 svg {
-  height: 380px;
-  width: 100%;
-}
-
-#carousel .bg2 svg {
-  height: 480px;
-  width: 100%;
-}
-
 
 /*svg bg statements*/
 

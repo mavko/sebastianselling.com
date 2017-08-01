@@ -37,7 +37,7 @@ a:active, a:hover {
 # Typography
 --------------------------------------------------------------*/
 
-h2, h3, h5 {
+h2, h3 {
   line-height: 1.6em;
   font-weight: 400;
 }
@@ -48,10 +48,6 @@ h2 {
 
 h3 {
   font-size: 24px;
-}
-
-h5 {
-  font-size: 18px;
 }
 
 p {
@@ -111,31 +107,6 @@ ul li {
 Navigation
 --------------------------------------------------------------*/
 
-.main-navigation ul {
-  display: inline-block;
-  list-style: none;
-  margin: 20px 0 0;
-}
-
-.main-navigation ul li {
-  display: inline;
-  margin-right: 30px;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.main-navigation ul li a {
-  color: #AAB2BD;
-}
-
-.main-navigation ul li a:active, .main-navigation ul li a:hover {
-  color: #4A89DC;
-}
-
-.main-navigation, .menu-header-menu-container {
-  display: inline;
-}
-
 
 /*--------------------------------------------------------------
 # Site Content
@@ -192,10 +163,6 @@ Navigation
   line-height: 1.2em;
 }
 
-.skill {
-  margin-bottom: 10px;
-}
-
 
 /* --------------------------------
 
@@ -229,10 +196,6 @@ Mask 2
   -webkit-animation: cd-pulse 1.3s 0.3s both;
   -moz-animation: cd-pulse 1.3s 0.3s both;
   animation: cd-pulse 1.3s 0.3s both;
-}
-
-.no-cssanimations .mask-2.cd-intro-content .content-wrapper::before {
-  opacity: 0;
 }
 
 .mask-2.cd-intro-content .content-wrapper>div {
@@ -402,16 +365,6 @@ section {
   width: 100%;
 }
 /*box bg*/
-#carousel .bg2 {
-  position: absolute;
-  width: 100%;
-  z-index: 0;
-}
-
-#carousel .bg2>* {
-  position: absolute;
-  width: 100%;
-}
 
 /*svg bg statements*/
 
@@ -441,14 +394,6 @@ section {
 
 
 /* about statements */
-
-.medium {
-  position: absolute;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  overflow: hidden;
-}
 
 #carousel .box {
   display: inline-block;
@@ -620,9 +565,6 @@ section {
   h3 {
     font-size: 20px;
   }
-  h5 {
-    font-size: 16px;
-  }
   section {
     padding: 0px !important;
   }
@@ -654,12 +596,6 @@ section {
     padding: 40px 20px;
     text-align: center;
   }
-  .main-navigation {
-    float: left;
-  }
-  .main-navigation ul li {
-    margin: 0 20px 0 0;
-  }
   .section {
     margin-bottom: 70px;
   }
@@ -668,9 +604,6 @@ section {
   }
   .grid {
     padding: 0 !important;
-  }
-  .capabilities {
-    margin-bottom: 60px;
   }
   .content-area {
     float: none;
@@ -686,7 +619,7 @@ section {
 
 
 /* reset styles */
-html, body, div, h2, h3, h5, p, a, img, ul, li {
+html, body, div, h2, h3, p, a, img, ul, li {
     margin: 0; padding: 0;  border: 0; outline: 0; font-size: 100%;
     vertical-align: baseline; background: transparent;
 }
@@ -713,7 +646,6 @@ body {
 footer,
 header,
 main,
-nav,
 section {
 	display: block;
 }
@@ -726,12 +658,6 @@ svg:not(:root) {
 	overflow: hidden;
 }
 /* Small menu. */
-
-@media screen and (min-width: 37.5em) {
-	.main-navigation ul {
-		display: block;
-	}
-}
 
 /*--------------------------------------------------------------
 # Clearings
